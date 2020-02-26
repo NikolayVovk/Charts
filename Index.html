@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Simple js</title>
+  </head>
+  <body>
+    <header id="menu">
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li class="main_li"><img src="Img/Dashboard.png" alt="">Home</li>
+          <li><img src="Img/Clock.png" alt="">Time Management</li>
+          <li><img src="Img/Box.png" alt="">Inbox</li>
+          <li><img src="Img/Calendar.png" alt="">Calendar</li>
+          <li><img src="Img/Activity.png" alt="">Analytics</li>
+          <li><img src="Img/Cogwheel.png" alt="">Settinsg</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sas"><h3 id="open">Open menu</h3></div>
+      <article>
+      <div class="main">
+        <h1>Hi Filip,</h1>
+        <p>Hi Filip, Checkout your latest projects and their progress.</p>
+      </div>
+      <hr class="line">
+      <div class="wave">
+        <div class="wave_text">
+          <div class="wave_text_title">
+            <h2>Wavy Lines</h2>
+            <p>Working Hours</p>
+          </div>
+          <div class="wave_text_time">
+            <h4>THIS WEEK</h4>
+            <img src="img/Down.png" alt="">
+          </div>
+        </div>
+        <div class="app">
+         <line-chart></line-chart>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_line"><canvas id="myChart" style="height:100%; width:100%"></canvas></div>
+        <div class="content_box"><canvas id="densityChart" style="height:100%; width:100%"></canvas></div>
+      </div>
+      </article>
+    </main>
+
+
+
+
+    <script src="https://unpkg.com/vue"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+<script src="https://unpkg.com/vue-chartjs/dist/vue-chartjs.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="Js/Main.js"></script>
+  </body>
+</html>

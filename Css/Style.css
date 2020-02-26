@@ -1,0 +1,268 @@
+@font-face {
+  font-family: AvenirNextLTPro-Regular;
+  src: url("Font/AvenirNextLTPro-Regular.otf");
+}
+
+html, body {
+  position: relative;
+  height: 100%;
+  font-family: 'Open Sans',Regular ;
+}
+
+body {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+::-webkit-scrollbar-track:vertical {
+background-color:#F5F5F5;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background-color:#0083E9;
+}
+
+::-webkit-scrollbar{
+width: 8px;
+height: 8px;
+}
+
+div , h1 , p , li , ul ,h2{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100%;
+  width: 15%;
+  background: #344750;
+  transition: all 0.5s ease;
+}
+
+#open{
+  z-index: 2;
+  display: none;
+  color: #000;
+}
+
+main {
+  height: 100%;
+  width: 85%;
+  position: relative;
+  font-family: AvenirNextLTPro-Regular;
+}
+
+.logo {
+  background: #0083E9;
+  width: 100%;
+  height: 10%;
+}
+
+li {
+  list-style: none; /* Убираем исходные маркеры */
+  height: 70px;
+  width: 100%;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer;
+ }
+
+ li img{
+   margin-right: 20px;
+ }
+
+ .main_li{
+  background: #ED448F;
+  opacity: 1;
+ }
+
+ .main_li:hover{
+  background: #ED448F;
+ }
+
+ li:hover{
+   background: #415A65;
+   padding-left: 25px;
+   opacity: 1;
+ }
+
+
+
+.sas {
+  height: 10%;
+  width: 100%;
+  background: #E0E0E0;
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+article{
+  background: #F5F5F5;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content:flex-start;
+  overflow-y:scroll;
+  overflow-x: hidden;
+}
+
+article h1, h2, h3, h4{
+  color: #344750;
+}
+
+article p{
+  color: #73909D;
+}
+
+.main{
+  width: 80%;
+  padding-top: 60px;
+}
+
+.main p{
+  margin-top: 10px;
+}
+
+.line{
+  width: 80%;
+  height: 4px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  color: #73909D;
+  opacity: 0.6;
+  size: 4px;
+}
+
+.wave{
+  width: 80%;
+  background: #fff;
+  padding: 20px;
+  height: 500px;
+}
+
+canvas {
+  height: 350px;
+  width: 100%;
+}
+
+.wave_text{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.wave_text_title{
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.wave_text_time{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content{
+  width: 80%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.content_line{
+  width: 35%;
+  height: 100%;
+  padding: 20px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_box{
+  width: 60%;
+  height: 100%;
+  padding: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.densityChart{
+  width: 100%;
+  height: 200px;
+}
+
+.imgCircle{
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+@media screen and (max-width: 900px) {
+  header{
+    width: 70%;
+    position: absolute;
+    left: -69%;
+    z-index: 1;
+  }
+
+  main{
+    width: 100%;
+  }
+
+  .wave{
+    width: 100%;
+  }
+
+  canvas {
+    height: 250px;
+    width: 100%;
+  }
+
+  .content{
+    width: 100%;
+  }
+
+  #open{
+    display: flex;
+  }
+
+  .content{
+    flex-direction: column;
+  }
+
+  .content_line{
+    width: 100%;
+  }
+
+  .content_box{
+    width: 100%;
+  }
+
+}
